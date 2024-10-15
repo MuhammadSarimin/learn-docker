@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  sqlite3:
+    image: nouchka/sqlite3:latest
+    container_name: sqlite
+    stdin_open: true
+    tty: true
+    volumes:
+      - type: bind
+        source: /Users/sarimin/code/docker/sqlite3/data
+        target: /data 
